@@ -1,0 +1,3 @@
+workspaces {
+  name = "gcp-prod"
+}
