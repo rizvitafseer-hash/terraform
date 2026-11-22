@@ -7,5 +7,5 @@ output "network_id" {
 }
 
 output "subnet_name" {
-  value = google_compute_subnetwork.subnet.name
+ value = google_compute_subnetwork.subnet.name
 }

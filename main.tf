@@ -9,3 +9,14 @@ resource "google_storage_bucket" "secure_data" {
     enabled = true
   }
 }
+module "storage" {
+  source = "./modules/storage"   
+
+  project_id  = var.project_id   
+  region      = var.region       
+  bucket_name = "my-app-assets-bucket"
+  labels = {
+    environment = "dev"
+    team        = "platform"
+  }
+}
