@@ -31,9 +31,3 @@ variable "subnet_cidr" {
   type    = string
   default = "10.10.0.0/24"
 }
-
-variable "vault_address" {
-  description = "HashiCorp Vault endpoint"
-  type        = string
-  sensitive   = true
-}

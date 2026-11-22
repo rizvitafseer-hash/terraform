@@ -20,3 +20,8 @@ module "storage" {
     team        = "platform"
   }
 }
+data "google_secret_manager_secret_version" "app_secret" {
+  project = "project-3d116623-b2e3-4d71-83e"
+  secret  = "app-seceret"
+  version = "latest"
+}
